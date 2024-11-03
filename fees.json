@@ -1,0 +1,606 @@
+{
+    "BTC": {
+      "network": "BTC",
+      "withdrawal_fee": 0.0001
+    },
+    "THETA": {
+      "network": "THETA",
+      "withdrawal_fee": 0.15
+    },
+    "BCH": {
+      "network": "BCH",
+      "withdrawal_fee": 0.0008
+    },
+    "MEME": {
+      "network": "ERC20",
+      "withdrawal_fee": 531
+    },
+    "DOGE": {
+      "network": "DOGE",
+      "withdrawal_fee": 4
+    },
+    "BICO": {
+      "network": "ERC20",
+      "withdrawal_fee": 26
+    },
+    "JTO": {
+      "network": "SOL",
+      "withdrawal_fee": 0.75
+    },
+    "LRC": {
+      "network": "ERC20",
+      "withdrawal_fee": 50
+    },
+    "AXS": {
+      "network": "ERC20",
+      "withdrawal_fee": 1.3
+    },
+    "CFX": {
+      "network": "CFX",
+      "withdrawal_fee": 0.01
+    },
+    "YGG": {
+      "network": "ERC20",
+      "withdrawal_fee": 13
+    },
+    "CVC": {
+      "network": "ERC20",
+      "withdrawal_fee": 49
+    },
+    "RDNT": {
+      "network": "ARBITRUM",
+      "withdrawal_fee": 2.24
+    },
+    "CELO": {
+      "network": "CELO",
+      "withdrawal_fee": 0.001
+    },
+    "GALA": {
+      "network": "ERC20",
+      "withdrawal_fee": 363.2
+    },
+    "FLOW": {
+      "network": "FLOW",
+      "withdrawal_fee": 0.008
+    },
+    "HBAR": {
+      "network": "HBAR",
+      "withdrawal_fee": 0.8
+    },
+    "AAVE": {
+      "network": "ERC20",
+      "withdrawal_fee": 0.043
+    },
+    "CRV": {
+      "network": "ERC20",
+      "withdrawal_fee": 25
+    },
+    "LQTY": {
+      "network": "ERC20",
+      "withdrawal_fee": 6.79
+    },
+    "KNC": {
+      "network": "ERC20",
+      "withdrawal_fee": 14
+    },
+    "SNX": {
+      "network": "ERC20",
+      "withdrawal_fee": 4.41
+    },
+    "SHIB": {
+      "network": "ERC20",
+      "withdrawal_fee": 344640
+    },
+    "ID": {
+      "network": "ERC20",
+      "withdrawal_fee": 15
+    },
+    "TRX": {
+      "network": "TRC20",
+      "withdrawal_fee": 1
+    },
+    "JUP": {
+      "network": "SOL",
+      "withdrawal_fee": 1.8
+    },
+    "LUNA": {
+      "network": "LUNA",
+      "withdrawal_fee": 0.05
+    },
+    "NEAR": {
+      "network": "NEAR",
+      "withdrawal_fee": 0.018
+    },
+    "LDO": {
+      "network": "ERC20",
+      "withdrawal_fee": 5.99
+    },
+    "RSR": {
+      "network": "ERC20",
+      "withdrawal_fee": 996
+    },
+    "BNT": {
+      "network": "ERC20",
+      "withdrawal_fee": 12
+    },
+    "WIF": {
+      "network": "SOL",
+      "withdrawal_fee": 0.77
+    },
+    "JST": {
+      "network": "TRC20",
+      "withdrawal_fee": 50
+    },
+    "TURBO": {
+      "network": "ERC20",
+      "withdrawal_fee": 758
+    },
+    "OP": {
+      "network": "OPTIMISM",
+      "withdrawal_fee": 0.1
+    },
+    "RVN": {
+      "network": "RVN",
+      "withdrawal_fee": 0.8
+    },
+    "BADGER": {
+      "network": "ERC20",
+      "withdrawal_fee": 2.14
+    },
+    "ICP": {
+      "network": "ICP",
+      "withdrawal_fee": 0.0003
+    },
+    "APE": {
+      "network": "ERC20",
+      "withdrawal_fee": 6
+    },
+    "W": {
+      "network": "SOL",
+      "withdrawal_fee": 7.31
+    },
+    "ZIL": {
+      "network": "ZIL",
+      "withdrawal_fee": 1
+    },
+    "CELR": {
+      "network": "ERC20",
+      "withdrawal_fee": 538
+    },
+    "WOO": {
+      "network": "ERC20",
+      "withdrawal_fee": 34
+    },
+    "MASK": {
+      "network": "ERC20",
+      "withdrawal_fee": 2.36
+    },
+    "1INCH": {
+      "network": "ERC20",
+      "withdrawal_fee": 24
+    },
+    "AUCTION": {
+      "network": "ERC20",
+      "withdrawal_fee": 0.49
+    },
+    "ETC": {
+      "network": "ETC",
+      "withdrawal_fee": 0.008
+    },
+    "ICX": {
+      "network": "ICX",
+      "withdrawal_fee": 0.02
+    },
+    "USTC": {
+      "network": "LUNC",
+      "withdrawal_fee": 10
+    },
+    "GMX": {
+      "network": "ARBITRUM",
+      "withdrawal_fee": 0.01
+    },
+    "WLD": {
+      "network": "OPTIMISM",
+      "withdrawal_fee": 0.022
+    },
+    "EOS": {
+      "network": "EOS",
+      "withdrawal_fee": 0.08
+    },
+    "WAXP": {
+      "network": "WAX",
+      "withdrawal_fee": 0.2
+    },
+    "CHZ": {
+      "network": "ERC20",
+      "withdrawal_fee": 103
+    },
+    "ARB": {
+      "network": "ARBITRUM",
+      "withdrawal_fee": 0.19
+    },
+    "BNB": {
+      "network": "BEP20",
+      "withdrawal_fee": 0.002
+    },
+    "AEVO": {
+      "network": "ERC20",
+      "withdrawal_fee": 19
+    },
+    "AR": {
+      "network": "AR",
+      "withdrawal_fee": 0.01
+    },
+    "ONT": {
+      "network": "ONT",
+      "withdrawal_fee": 1
+    },
+    "ENS": {
+      "network": "ERC20",
+      "withdrawal_fee": 0.36
+    },
+    "FLM": {
+      "network": "NEO3",
+      "withdrawal_fee": 2.9
+    },
+    "FIL": {
+      "network": "FIL",
+      "withdrawal_fee": 0.0008
+    },
+    "NOT": {
+      "network": "TON",
+      "withdrawal_fee": 30
+    },
+    "TRB": {
+      "network": "ERC20",
+      "withdrawal_fee": 0.11
+    },
+    "XLM": {
+      "network": "XLM",
+      "withdrawal_fee": 0.001
+    },
+    "ALGO": {
+      "network": "ALGO",
+      "withdrawal_fee": 0.008
+    },
+    "ACH": {
+      "network": "ERC20",
+      "withdrawal_fee": 319
+    },
+    "IOTA": {
+      "network": "IOTA",
+      "withdrawal_fee": 0.5
+    },
+    "ENJ": {
+      "network": "ENJ",
+      "withdrawal_fee": 0.001
+    },
+    "HMSTR": {
+      "network": "TON",
+      "withdrawal_fee": 56
+    },
+    "XTZ": {
+      "network": "XTZ",
+      "withdrawal_fee": 0.1
+    },
+    "FTM": {
+      "network": "FTM",
+      "withdrawal_fee": 0.5
+    },
+    "UNI": {
+      "network": "ERC20",
+      "withdrawal_fee": 0.81
+    },
+    "DOT": {
+      "network": "DOT",
+      "withdrawal_fee": 0.08
+    },
+    "GRT": {
+      "network": "ERC20",
+      "withdrawal_fee": 41
+    },
+    "BOME": {
+      "network": "SOL",
+      "withdrawal_fee": 238
+    },
+    "CVX": {
+      "network": "ERC20",
+      "withdrawal_fee": 3.87
+    },
+    "IMX": {
+      "network": "ERC20",
+      "withdrawal_fee": 5.53
+    },
+    "MAGIC": {
+      "network": "ARBITRUM",
+      "withdrawal_fee": 0.29
+    },
+    "PEPE": {
+      "network": "ERC20",
+      "withdrawal_fee": 689831
+    },
+    "USDC": {
+      "network": "ARBITRUM",
+      "withdrawal_fee": 0.099
+    },
+    "API3": {
+      "network": "ERC20",
+      "withdrawal_fee": 4.1
+    },
+    "CATI": {
+      "network": "TON",
+      "withdrawal_fee": 0.47
+    },
+    "STORJ": {
+      "network": "ERC20",
+      "withdrawal_fee": 13
+    },
+    "ATOM": {
+      "network": "ATOM",
+      "withdrawal_fee": 0.02
+    },
+    "SSV": {
+      "network": "ERC20",
+      "withdrawal_fee": 0.35
+    },
+    "APT": {
+      "network": "APT",
+      "withdrawal_fee": 0.005
+    },
+    "DGB": {
+      "network": "DGB",
+      "withdrawal_fee": 0.004
+    },
+    "INJ": {
+      "network": "INJ",
+      "withdrawal_fee": 0.01
+    },
+    "JOE": {
+      "network": "AVAXC",
+      "withdrawal_fee": 2
+    },
+    "LUNC": {
+      "network": "LUNC",
+      "withdrawal_fee": 1000
+    },
+    "YFI": {
+      "network": "ERC20",
+      "withdrawal_fee": 0.0013
+    },
+    "SLP": {
+      "network": "ERC20",
+      "withdrawal_fee": 2301
+    },
+    "TNSR": {
+      "network": "SOL",
+      "withdrawal_fee": 4.11
+    },
+    "COMP": {
+      "network": "ERC20",
+      "withdrawal_fee": 0.14
+    },
+    "MINA": {
+      "network": "MINA",
+      "withdrawal_fee": 0.9
+    },
+    "KSM": {
+      "network": "KSM",
+      "withdrawal_fee": 0.01
+    },
+    "ONE": {
+      "network": "ONE",
+      "withdrawal_fee": 0.1
+    },
+    "ELF": {
+      "network": "ELF",
+      "withdrawal_fee": 1
+    },
+    "AVAX": {
+      "network": "AVAXC",
+      "withdrawal_fee": 0.0064
+    },
+    "SAND": {
+      "network": "ERC20",
+      "withdrawal_fee": 24
+    },
+    "ZRO": {
+      "network": "ARBITRUM",
+      "withdrawal_fee": 0.1
+    },
+    "DYDX": {
+      "network": "DYDX",
+      "withdrawal_fee": 0.03
+    },
+    "BAND": {
+      "network": "ERC20",
+      "withdrawal_fee": 5.77
+    },
+    "TON": {
+      "network": "TON",
+      "withdrawal_fee": 0.02
+    },
+    "GFT": {
+      "network": "BEP20",
+      "withdrawal_fee": 34
+    },
+    "ACE": {
+      "network": "ENDURANCE",
+      "withdrawal_fee": 0.008
+    },
+    "XRP": {
+      "network": "XRP",
+      "withdrawal_fee": 0.2
+    },
+    "TIA": {
+      "network": "TIA",
+      "withdrawal_fee": 0.1
+    },
+    "METIS": {
+      "network": "METIS",
+      "withdrawal_fee": 0.01
+    },
+    "EGLD": {
+      "network": "EGLD",
+      "withdrawal_fee": 0.0008
+    },
+    "BONK": {
+      "network": "SOL",
+      "withdrawal_fee": 87786
+    },
+    "SOL": {
+      "network": "SOL",
+      "withdrawal_fee": 0.01
+    },
+    "QTUM": {
+      "network": "QTUM",
+      "withdrawal_fee": 0.05
+    },
+    "SUI": {
+      "network": "SUI",
+      "withdrawal_fee": 0.06
+    },
+    "MKR": {
+      "network": "ERC20",
+      "withdrawal_fee": 0.005
+    },
+    "ETH": {
+      "network": "ARBITRUM",
+      "withdrawal_fee": 0.00004
+    },
+    "LPT": {
+      "network": "ERC20",
+      "withdrawal_fee": 0.6
+    },
+    "SUSHI": {
+      "network": "ERC20",
+      "withdrawal_fee": 9.09
+    },
+    "GAS": {
+      "network": "NEO",
+      "withdrawal_fee": 0.005
+    },
+    "GLMR": {
+      "network": "GLMR",
+      "withdrawal_fee": 0.02
+    },
+    "BAL": {
+      "network": "ERC20",
+      "withdrawal_fee": 3.27
+    },
+    "T": {
+      "network": "ERC20",
+      "withdrawal_fee": 297
+    },
+    "FXS": {
+      "network": "ERC20",
+      "withdrawal_fee": 3.36
+    },
+    "ZK": {
+      "network": "ZKSYNCERA",
+      "withdrawal_fee": 0.5
+    },
+    "FLOKI": {
+      "network": "BEP20",
+      "withdrawal_fee": 10000
+    },
+    "NMR": {
+      "network": "ERC20",
+      "withdrawal_fee": 0.43
+    },
+    "STRK": {
+      "network": "STARKNET",
+      "withdrawal_fee": 1.69
+    },
+    "MOVR": {
+      "network": "MOVR",
+      "withdrawal_fee": 0.003
+    },
+    "ADA": {
+      "network": "ADA",
+      "withdrawal_fee": 0.8
+    },
+    "POL": {
+      "network": "MATIC",
+      "withdrawal_fee": 0.1
+    },
+    "AGLD": {
+      "network": "ERC20",
+      "withdrawal_fee": 5.33
+    },
+    "GMT": {
+      "network": "MATIC",
+      "withdrawal_fee": 1
+    },
+    "PERP": {
+      "network": "ERC20",
+      "withdrawal_fee": 10
+    },
+    "PYTH": {
+      "network": "SOL",
+      "withdrawal_fee": 4.79
+    },
+    "LTC": {
+      "network": "LTC",
+      "withdrawal_fee": 0.001
+    },
+    "ETHFI": {
+      "network": "ERC20",
+      "withdrawal_fee": 4.49
+    },
+    "ZRX": {
+      "network": "ERC20",
+      "withdrawal_fee": 19
+    },
+    "OM": {
+      "network": "ERC20",
+      "withdrawal_fee": 4.31
+    },
+    "MANA": {
+      "network": "ERC20",
+      "withdrawal_fee": 21
+    },
+    "PEOPLE": {
+      "network": "ERC20",
+      "withdrawal_fee": 88
+    },
+    "IOST": {
+      "network": "IOST",
+      "withdrawal_fee": 0.8
+    },
+    "BLUR": {
+      "network": "ERC20",
+      "withdrawal_fee": 29
+    },
+    "RAY": {
+      "network": "SOL",
+      "withdrawal_fee": 0.48
+    },
+    "LINK": {
+      "network": "ERC20",
+      "withdrawal_fee": 0.53
+    },
+    "UMA": {
+      "network": "ERC20",
+      "withdrawal_fee": 2.64
+    },
+    "NEO": {
+      "network": "NEO3",
+      "withdrawal_fee": 0.01
+    },
+    "BAT": {
+      "network": "ERC20",
+      "withdrawal_fee": 38
+    },
+    "GLM": {
+      "network": "ERC20",
+      "withdrawal_fee": 20
+    },
+    "DOGS": {
+      "network": "TON",
+      "withdrawal_fee": 100
+    },
+    "RENDER": {
+      "network": "SOL",
+      "withdrawal_fee": 0.14
+    }
+  }

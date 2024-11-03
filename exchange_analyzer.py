@@ -1,3 +1,4 @@
+import json
 import ccxt
 import pandas as pd
 from typing import List, Dict, Tuple
@@ -5,10 +6,19 @@ import asyncio
 from concurrent.futures import ThreadPoolExecutor
 
 class ExchangeAnalyzer:
-    def __init__(self):
-        self.binance = ccxt.binance()
-        self.okx = ccxt.okx()
+    def __init__(self, binance_credentials: Dict = None, okx_credentials: Dict = None):
+        # Initialize Binance with credentials if provided
+        self.binance = ccxt.binance(binance_credentials) if binance_credentials else ccxt.binance()
         
+        # Initialize OKX with credentials if provided
+        self.okx = ccxt.okx(okx_credentials) if okx_credentials else ccxt.okx()
+        
+        # Validate that we have API credentials if provided
+        if binance_credentials:
+            self.binance.check_required_credentials()
+        if okx_credentials:
+            self.okx.check_required_credentials()
+
     async def get_common_margin_pairs(self) -> List[str]:
         """Get trading pairs available on both exchanges with margin support"""
         
@@ -64,18 +74,15 @@ class ExchangeAnalyzer:
         lowest_max_fee = float('inf')
         
         # Compare fees across all available networks
-        for network in binance_networks:
-            network_id = network['network']
-            binance_fee = float(network.get('withdrawFee', float('inf')))
+        for network_id, binance_network in binance_networks.items():
+            # Get Binance withdrawal fee
+            binance_fee = float(binance_network.get('withdraw', {}).get('fee', float('inf')))
             
             # Find corresponding network on OKX
-            okx_network = next(
-                (n for n in okx_networks if n['network'] == network_id),
-                None
-            )
+            okx_network = okx_networks.get(network_id)
             
             if okx_network:
-                okx_fee = float(okx_network.get('withdrawFee', float('inf')))
+                okx_fee = float(okx_network.get('withdraw', {}).get('fee', float('inf')))
                 max_fee = max(binance_fee, okx_fee)
                 
                 if max_fee < lowest_max_fee:
@@ -114,7 +121,22 @@ class ExchangeAnalyzer:
         return sorted_chains
 
 async def main():
-    analyzer = ExchangeAnalyzer()
+    # Example credentials structure
+    binance_credentials = {
+        'apiKey': 'J1hIqDkJVj44CvEiOtgMA9VYMF911kV7oq70YLvQNq2EdHZjTDiP33T53vWt9awc',
+        'secret': 'lQEkT8dg1efseKMx8ulP7meeHGSmqjm1yxXxpdJBzcCkHpQf5F482IwGhNM94xoL'
+    }
+    
+    okx_credentials = {
+        'apiKey': '35f981b7-3c48-46d4-9bc5-bed14ce5b82e',
+        'secret': '4B5C817A781E7DDA7ED7D82215AB3213',
+        'password': 'Reform@781'  # OKX specific requirement
+    }
+    
+    analyzer = ExchangeAnalyzer(
+        binance_credentials=binance_credentials,
+        okx_credentials=okx_credentials
+    )
     results = await analyzer.analyze_withdrawal_options()
     
     # Convert to DataFrame for better visualization

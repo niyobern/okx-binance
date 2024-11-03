@@ -88,3 +88,15 @@ SYMBOLS = [
 # Network Settings
 TRANSFER_WAIT_TIME = 30  # seconds to wait for transfer confirmation
 WEBSOCKET_RECONNECT_DELAY = 5  # seconds to wait before reconnecting websocket
+
+# Exchange API credentials
+BINANCE_CONFIG = {
+    'apiKey': 'your_binance_api_key',
+    'secret': 'your_binance_secret'
+}
+
+OKX_CONFIG = {
+    'apiKey': 'your_okx_api_key',
+    'secret': 'your_okx_secret',
+    'password': 'your_okx_password'
+}

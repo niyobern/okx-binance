@@ -1,0 +1,533 @@
+{
+    "timestamp": "2024-11-03T11:56:00.654721",
+    "fees": {
+        "CFX": {
+            "network": "CFX",
+            "withdrawal_fee": 0.01,
+            "withdrawal_fee_usdt": 0.0,
+            "price_usdt": 0.133
+        },
+        "CELO": {
+            "network": "CELO",
+            "withdrawal_fee": 0.001,
+            "withdrawal_fee_usdt": 0.0,
+            "price_usdt": 0.5617
+        },
+        "FLOW": {
+            "network": "FLOW",
+            "withdrawal_fee": 0.008,
+            "withdrawal_fee_usdt": 0.0,
+            "price_usdt": 0.489
+        },
+        "ICP": {
+            "network": "ICP",
+            "withdrawal_fee": 0.0003,
+            "withdrawal_fee_usdt": 0.0,
+            "price_usdt": 7.178
+        },
+        "ICX": {
+            "network": "ICX",
+            "withdrawal_fee": 0.02,
+            "withdrawal_fee_usdt": 0.0,
+            "price_usdt": 0.1204
+        },
+        "FIL": {
+            "network": "FIL",
+            "withdrawal_fee": 0.0008,
+            "withdrawal_fee_usdt": 0.0,
+            "price_usdt": 3.333
+        },
+        "XLM": {
+            "network": "XLM",
+            "withdrawal_fee": 0.001,
+            "withdrawal_fee_usdt": 0.0,
+            "price_usdt": 0.0906
+        },
+        "ALGO": {
+            "network": "ALGO",
+            "withdrawal_fee": 0.008,
+            "withdrawal_fee_usdt": 0.0,
+            "price_usdt": 0.1108
+        },
+        "ENJ": {
+            "network": "ENJ",
+            "withdrawal_fee": 0.001,
+            "withdrawal_fee_usdt": 0.0,
+            "price_usdt": 0.1304
+        },
+        "DGB": {
+            "network": "DGB",
+            "withdrawal_fee": 0.004,
+            "withdrawal_fee_usdt": 0.0,
+            "price_usdt": 0.00525
+        },
+        "ONE": {
+            "network": "ONE",
+            "withdrawal_fee": 0.1,
+            "withdrawal_fee_usdt": 0.0,
+            "price_usdt": 0.01103
+        },
+        "GLMR": {
+            "network": "GLMR",
+            "withdrawal_fee": 0.02,
+            "withdrawal_fee_usdt": 0.0,
+            "price_usdt": 0.1555
+        },
+        "IOST": {
+            "network": "IOST",
+            "withdrawal_fee": 0.8,
+            "withdrawal_fee_usdt": 0.0,
+            "price_usdt": 0.0044
+        },
+        "RVN": {
+            "network": "RVN",
+            "withdrawal_fee": 0.8,
+            "withdrawal_fee_usdt": 0.01,
+            "price_usdt": 0.0158
+        },
+        "ZIL": {
+            "network": "ZIL",
+            "withdrawal_fee": 1,
+            "withdrawal_fee_usdt": 0.01,
+            "price_usdt": 0.01325
+        },
+        "WAXP": {
+            "network": "WAX",
+            "withdrawal_fee": 0.2,
+            "withdrawal_fee_usdt": 0.01,
+            "price_usdt": 0.02894
+        },
+        "ACE": {
+            "network": "ENDURANCE",
+            "withdrawal_fee": 0.008,
+            "withdrawal_fee_usdt": 0.01,
+            "price_usdt": 1.799
+        },
+        "LUNA": {
+            "network": "LUNA",
+            "withdrawal_fee": 0.05,
+            "withdrawal_fee_usdt": 0.02,
+            "price_usdt": 0.3123
+        },
+        "EGLD": {
+            "network": "EGLD",
+            "withdrawal_fee": 0.0008,
+            "withdrawal_fee_usdt": 0.02,
+            "price_usdt": 22.3
+        },
+        "GAS": {
+            "network": "NEO",
+            "withdrawal_fee": 0.005,
+            "withdrawal_fee_usdt": 0.02,
+            "price_usdt": 3.581
+        },
+        "HBAR": {
+            "network": "HBAR",
+            "withdrawal_fee": 0.8,
+            "withdrawal_fee_usdt": 0.03,
+            "price_usdt": 0.0428
+        },
+        "EOS": {
+            "network": "EOS",
+            "withdrawal_fee": 0.08,
+            "withdrawal_fee_usdt": 0.03,
+            "price_usdt": 0.4164
+        },
+        "DYDX": {
+            "network": "DYDX",
+            "withdrawal_fee": 0.03,
+            "withdrawal_fee_usdt": 0.03,
+            "price_usdt": 0.9019
+        },
+        "MOVR": {
+            "network": "MOVR",
+            "withdrawal_fee": 0.003,
+            "withdrawal_fee_usdt": 0.03,
+            "price_usdt": 8.561
+        },
+        "POL": {
+            "network": "MATIC",
+            "withdrawal_fee": 0.1,
+            "withdrawal_fee_usdt": 0.03,
+            "price_usdt": 0.3044
+        },
+        "WLD": {
+            "network": "OPTIMISM",
+            "withdrawal_fee": 0.022,
+            "withdrawal_fee_usdt": 0.04,
+            "price_usdt": 1.731
+        },
+        "APT": {
+            "network": "APT",
+            "withdrawal_fee": 0.005,
+            "withdrawal_fee_usdt": 0.04,
+            "price_usdt": 8.07
+        },
+        "IOTA": {
+            "network": "IOTA",
+            "withdrawal_fee": 0.5,
+            "withdrawal_fee_usdt": 0.05,
+            "price_usdt": 0.106
+        },
+        "DOGS": {
+            "network": "TON",
+            "withdrawal_fee": 100,
+            "withdrawal_fee_usdt": 0.05,
+            "price_usdt": 0.0005295
+        },
+        "XTZ": {
+            "network": "XTZ",
+            "withdrawal_fee": 0.1,
+            "withdrawal_fee_usdt": 0.06,
+            "price_usdt": 0.61
+        },
+        "ZK": {
+            "network": "ZKSYNCERA",
+            "withdrawal_fee": 0.5,
+            "withdrawal_fee_usdt": 0.06,
+            "price_usdt": 0.1198
+        },
+        "NEAR": {
+            "network": "NEAR",
+            "withdrawal_fee": 0.018,
+            "withdrawal_fee_usdt": 0.07,
+            "price_usdt": 3.679
+        },
+        "LTC": {
+            "network": "LTC",
+            "withdrawal_fee": 0.001,
+            "withdrawal_fee_usdt": 0.07,
+            "price_usdt": 67.16
+        },
+        "ATOM": {
+            "network": "ATOM",
+            "withdrawal_fee": 0.02,
+            "withdrawal_fee_usdt": 0.08,
+            "price_usdt": 3.997
+        },
+        "LUNC": {
+            "network": "LUNC",
+            "withdrawal_fee": 1000,
+            "withdrawal_fee_usdt": 0.08,
+            "price_usdt": 8.341e-05
+        },
+        "RDNT": {
+            "network": "ARBITRUM",
+            "withdrawal_fee": 2.24,
+            "withdrawal_fee_usdt": 0.09,
+            "price_usdt": 0.0421
+        },
+        "ARB": {
+            "network": "ARBITRUM",
+            "withdrawal_fee": 0.19,
+            "withdrawal_fee_usdt": 0.09,
+            "price_usdt": 0.4786
+        },
+        "MAGIC": {
+            "network": "ARBITRUM",
+            "withdrawal_fee": 0.29,
+            "withdrawal_fee_usdt": 0.09,
+            "price_usdt": 0.3244
+        },
+        "NEO": {
+            "network": "NEO3",
+            "withdrawal_fee": 0.01,
+            "withdrawal_fee_usdt": 0.09,
+            "price_usdt": 9.08
+        },
+        "USDC": {
+            "network": "ARBITRUM",
+            "withdrawal_fee": 0.099,
+            "withdrawal_fee_usdt": 0.1,
+            "price_usdt": 1.0002
+        },
+        "TON": {
+            "network": "TON",
+            "withdrawal_fee": 0.02,
+            "withdrawal_fee_usdt": 0.1,
+            "price_usdt": 4.796
+        },
+        "XRP": {
+            "network": "XRP",
+            "withdrawal_fee": 0.2,
+            "withdrawal_fee_usdt": 0.1,
+            "price_usdt": 0.5026
+        },
+        "ETH": {
+            "network": "ARBITRUM",
+            "withdrawal_fee": 4e-05,
+            "withdrawal_fee_usdt": 0.1,
+            "price_usdt": 2454.44
+        },
+        "QTUM": {
+            "network": "QTUM",
+            "withdrawal_fee": 0.05,
+            "withdrawal_fee_usdt": 0.11,
+            "price_usdt": 2.13
+        },
+        "SUI": {
+            "network": "SUI",
+            "withdrawal_fee": 0.06,
+            "withdrawal_fee_usdt": 0.11,
+            "price_usdt": 1.8552
+        },
+        "GMT": {
+            "network": "MATIC",
+            "withdrawal_fee": 1,
+            "withdrawal_fee_usdt": 0.12,
+            "price_usdt": 0.1207
+        },
+        "CATI": {
+            "network": "TON",
+            "withdrawal_fee": 0.47,
+            "withdrawal_fee_usdt": 0.13,
+            "price_usdt": 0.2832
+        },
+        "OP": {
+            "network": "OPTIMISM",
+            "withdrawal_fee": 0.1,
+            "withdrawal_fee_usdt": 0.14,
+            "price_usdt": 1.408
+        },
+        "ETC": {
+            "network": "ETC",
+            "withdrawal_fee": 0.008,
+            "withdrawal_fee_usdt": 0.14,
+            "price_usdt": 17.82
+        },
+        "AR": {
+            "network": "AR",
+            "withdrawal_fee": 0.01,
+            "withdrawal_fee_usdt": 0.14,
+            "price_usdt": 13.83
+        },
+        "HMSTR": {
+            "network": "TON",
+            "withdrawal_fee": 56,
+            "withdrawal_fee_usdt": 0.14,
+            "price_usdt": 0.002421
+        },
+        "FLM": {
+            "network": "NEO3",
+            "withdrawal_fee": 2.9,
+            "withdrawal_fee_usdt": 0.15,
+            "price_usdt": 0.0503
+        },
+        "AVAX": {
+            "network": "AVAXC",
+            "withdrawal_fee": 0.0064,
+            "withdrawal_fee_usdt": 0.15,
+            "price_usdt": 23.25
+        },
+        "THETA": {
+            "network": "THETA",
+            "withdrawal_fee": 0.15,
+            "withdrawal_fee_usdt": 0.16,
+            "price_usdt": 1.058
+        },
+        "TRX": {
+            "network": "TRC20",
+            "withdrawal_fee": 1,
+            "withdrawal_fee_usdt": 0.16,
+            "price_usdt": 0.1641
+        },
+        "ONT": {
+            "network": "ONT",
+            "withdrawal_fee": 1,
+            "withdrawal_fee_usdt": 0.16,
+            "price_usdt": 0.162
+        },
+        "KSM": {
+            "network": "KSM",
+            "withdrawal_fee": 0.01,
+            "withdrawal_fee_usdt": 0.16,
+            "price_usdt": 15.57
+        },
+        "INJ": {
+            "network": "INJ",
+            "withdrawal_fee": 0.01,
+            "withdrawal_fee_usdt": 0.17,
+            "price_usdt": 17.4
+        },
+        "NOT": {
+            "network": "TON",
+            "withdrawal_fee": 30,
+            "withdrawal_fee_usdt": 0.18,
+            "price_usdt": 0.005919
+        },
+        "USTC": {
+            "network": "LUNC",
+            "withdrawal_fee": 10,
+            "withdrawal_fee_usdt": 0.2,
+            "price_usdt": 0.02023
+        },
+        "GMX": {
+            "network": "ARBITRUM",
+            "withdrawal_fee": 0.01,
+            "withdrawal_fee_usdt": 0.21,
+            "price_usdt": 20.7
+        },
+        "BCH": {
+            "network": "BCH",
+            "withdrawal_fee": 0.0008,
+            "withdrawal_fee_usdt": 0.27,
+            "price_usdt": 341.5
+        },
+        "ADA": {
+            "network": "ADA",
+            "withdrawal_fee": 0.8,
+            "withdrawal_fee_usdt": 0.27,
+            "price_usdt": 0.3357
+        },
+        "FTM": {
+            "network": "FTM",
+            "withdrawal_fee": 0.5,
+            "withdrawal_fee_usdt": 0.3,
+            "price_usdt": 0.5944
+        },
+        "DOT": {
+            "network": "DOT",
+            "withdrawal_fee": 0.08,
+            "withdrawal_fee_usdt": 0.3,
+            "price_usdt": 3.75
+        },
+        "ZRO": {
+            "network": "ARBITRUM",
+            "withdrawal_fee": 0.1,
+            "withdrawal_fee_usdt": 0.3,
+            "price_usdt": 3.039
+        },
+        "ELF": {
+            "network": "ELF",
+            "withdrawal_fee": 1,
+            "withdrawal_fee_usdt": 0.34,
+            "price_usdt": 0.3354
+        },
+        "METIS": {
+            "network": "METIS",
+            "withdrawal_fee": 0.01,
+            "withdrawal_fee_usdt": 0.37,
+            "price_usdt": 37.17
+        },
+        "MINA": {
+            "network": "MINA",
+            "withdrawal_fee": 0.9,
+            "withdrawal_fee_usdt": 0.43,
+            "price_usdt": 0.474
+        },
+        "TIA": {
+            "network": "TIA",
+            "withdrawal_fee": 0.1,
+            "withdrawal_fee_usdt": 0.45,
+            "price_usdt": 4.521
+        },
+        "GFT": {
+            "network": "BEP20",
+            "withdrawal_fee": 34,
+            "withdrawal_fee_usdt": 0.51,
+            "price_usdt": 0.01499
+        },
+        "JOE": {
+            "network": "AVAXC",
+            "withdrawal_fee": 2,
+            "withdrawal_fee_usdt": 0.57,
+            "price_usdt": 0.2853
+        },
+        "DOGE": {
+            "network": "DOGE",
+            "withdrawal_fee": 4,
+            "withdrawal_fee_usdt": 0.59,
+            "price_usdt": 0.14814
+        },
+        "STRK": {
+            "network": "STARKNET",
+            "withdrawal_fee": 1.69,
+            "withdrawal_fee_usdt": 0.59,
+            "price_usdt": 0.3493
+        },
+        "RENDER": {
+            "network": "SOL",
+            "withdrawal_fee": 0.14,
+            "withdrawal_fee_usdt": 0.62,
+            "price_usdt": 4.435
+        },
+        "BNB": {
+            "network": "BEP20",
+            "withdrawal_fee": 0.002,
+            "withdrawal_fee_usdt": 1.11,
+            "price_usdt": 557.4
+        },
+        "FLOKI": {
+            "network": "BEP20",
+            "withdrawal_fee": 10000,
+            "withdrawal_fee_usdt": 1.26,
+            "price_usdt": 0.00012637
+        },
+        "JST": {
+            "network": "TRC20",
+            "withdrawal_fee": 50,
+            "withdrawal_fee_usdt": 1.42,
+            "price_usdt": 0.02836
+        },
+        "TNSR": {
+            "network": "SOL",
+            "withdrawal_fee": 4.11,
+            "withdrawal_fee_usdt": 1.47,
+            "price_usdt": 0.3566
+        },
+        "W": {
+            "network": "SOL",
+            "withdrawal_fee": 7.31,
+            "withdrawal_fee_usdt": 1.51,
+            "price_usdt": 0.2067
+        },
+        "JTO": {
+            "network": "SOL",
+            "withdrawal_fee": 0.75,
+            "withdrawal_fee_usdt": 1.57,
+            "price_usdt": 2.088
+        },
+        "BONK": {
+            "network": "SOL",
+            "withdrawal_fee": 87786,
+            "withdrawal_fee_usdt": 1.58,
+            "price_usdt": 1.796e-05
+        },
+        "PYTH": {
+            "network": "SOL",
+            "withdrawal_fee": 4.79,
+            "withdrawal_fee_usdt": 1.58,
+            "price_usdt": 0.3296
+        },
+        "WIF": {
+            "network": "SOL",
+            "withdrawal_fee": 0.77,
+            "withdrawal_fee_usdt": 1.59,
+            "price_usdt": 2.069
+        },
+        "JUP": {
+            "network": "SOL",
+            "withdrawal_fee": 1.8,
+            "withdrawal_fee_usdt": 1.6,
+            "price_usdt": 0.8881
+        },
+        "SOL": {
+            "network": "SOL",
+            "withdrawal_fee": 0.01,
+            "withdrawal_fee_usdt": 1.64,
+            "price_usdt": 163.64
+        },
+        "RAY": {
+            "network": "SOL",
+            "withdrawal_fee": 0.48,
+            "withdrawal_fee_usdt": 1.65,
+            "price_usdt": 3.445
+        },
+        "BOME": {
+            "network": "SOL",
+            "withdrawal_fee": 238,
+            "withdrawal_fee_usdt": 1.73,
+            "price_usdt": 0.007279
+        }
+    }
+}
