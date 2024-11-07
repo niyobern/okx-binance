@@ -5,7 +5,13 @@ from decimal import Decimal
 from trading_manager import TradingManager
 from websocket_handlers import WebSocketHandler
 from exchange_operations import BinanceOperations, OKXOperations
-from config import *
+from config import (
+    BINANCE_WS, OKX_WS,
+    BINANCE_DEMO_WS, OKX_DEMO_WS,
+    BINANCE_BASE_URL, OKX_BASE_URL,
+    BINANCE_DEMO_BASE_URL, OKX_DEMO_BASE_URL,
+    SYMBOLS, COIN_NETWORKS, TRADING_MODE
+)
 
 class ArbitrageBot:
     def __init__(self, mode="demo"):
@@ -32,6 +38,7 @@ class ArbitrageBot:
         self.trading_manager = TradingManager(initial_capital=2000)
         self.min_trade_amount = 100
         self.max_spread_percentage = Decimal('5')
+        self.SYMBOLS = SYMBOLS
         
         # Operations with mode
         self.binance_ops = BinanceOperations(mode=mode)
@@ -44,13 +51,41 @@ class ArbitrageBot:
             if not self.trading_manager.can_open_position():
                 return False
 
-            binance_price = Decimal(str(binance_price))
-            okx_price = Decimal(str(okx_price))
-            
+            # Convert prices to Decimal for precise calculations
+            try:
+                binance_price = Decimal(str(binance_price))
+                okx_price = Decimal(str(okx_price))
+            except Exception as e:
+                print(f"Error converting prices to Decimal for {symbol}: {e}")
+                print(f"Binance price: {binance_price}, OKX price: {okx_price}")
+                return False
+                
             # Calculate spread percentage
             avg_price = (binance_price + okx_price) / 2
             spread_percentage = abs(binance_price - okx_price) / avg_price * 100
+
+            # Extract base currency from symbol (e.g., "BTC" from "BTCUSDT")
+            try:
+                coin = symbol[:-4]  # Remove 'USDT' from the end
+                if coin not in COIN_NETWORKS:
+                    print(f"Warning: {coin} not found in COIN_NETWORKS configuration")
+                    return False
+            except Exception as e:
+                print(f"Error extracting coin from symbol {symbol}: {e}")
+                return False
             
+            # Calculate quantity based on available capital
+            try:
+                quantity = self.trading_manager.calculate_position_size(buy_price)
+                total_cost = quantity * buy_price
+                
+                if total_cost < self.min_trade_amount:
+                    print(f"Trade amount {total_cost} below minimum {self.min_trade_amount} for {symbol}")
+                    return False
+            except Exception as e:
+                print(f"Error calculating position size for {symbol}: {e}")
+                return False
+
             # Determine which exchange has better prices for buying and selling
             if binance_price < okx_price:
                 buy_exchange = 'binance'
@@ -89,7 +124,6 @@ class ArbitrageBot:
                 usdt_return_exchange = 'okx'
 
             # Calculate fees and potential profit
-            coin = symbol.split('-')[0]
             withdrawal_fee = COIN_NETWORKS[coin]['withdrawal_fee']
             usdt_withdrawal_fee = COIN_NETWORKS['USDT']['withdrawal_fee']
             total_transfer_fees = withdrawal_fee + usdt_withdrawal_fee
@@ -98,12 +132,7 @@ class ArbitrageBot:
             total_fee_percentage = trading_fees + (total_transfer_fees / (quantity * buy_price) * 100)
             profit_percentage = spread_percentage - total_fee_percentage
             
-            # Calculate quantity based on available capital
-            quantity = self.trading_manager.calculate_position_size(buy_price)
-            total_cost = quantity * buy_price
-            
             if (profit_percentage > self.trading_manager.min_profit_percentage and
-                total_cost >= self.min_trade_amount and
                 spread_percentage <= self.max_spread_percentage):
                 
                 print(f"\nExecuting arbitrage for {symbol}")
@@ -112,91 +141,29 @@ class ArbitrageBot:
                 print(f"Spread: {spread_percentage:.2f}%")
                 print(f"Expected profit after fees: {profit_percentage:.2f}%")
                 
-                # Execute both orders concurrently
-                spot_order, margin_order = await asyncio.gather(
-                    spot_buy(symbol, quantity),
-                    margin_sell(symbol, quantity)
-                )
-                
-                if self._verify_market_orders(spot_order, margin_order):
-                    if self.mode == "demo":
-                        # Simulate transfer time and deduct fees in demo mode
-                        print(f"\nDemo Mode: Simulating transfers...")
-                        print(f"Transfer fees to be deducted: {total_transfer_fees} USDT")
-                        
-                        # Record the trade with fees
-                        self.trading_manager.record_trade(
-                            symbol, buy_exchange, sell_exchange,
-                            quantity, buy_price, sell_price,
-                            total_transfer_fees
-                        )
-                        
-                        # Simulate waiting for transfers
-                        await asyncio.sleep(600)  # 10 minutes simulation
-                        await self.trading_manager.complete_trade(symbol)
-                        
-                    else:  # Live trading mode
-                        try:
-                            # Step 1: Transfer crypto to repay loan
-                            print(f"\nInitiating crypto transfer to {to_exchange}...")
-                            transfer = await crypto_transfer(coin, quantity, to_exchange)
-                            
-                            if not isinstance(transfer, dict) or 'txId' not in transfer:
-                                print("Failed to initiate transfer or get transaction ID")
-                                return False
-                                
-                            txid = transfer['txId']
-                            print(f"Transfer initiated: Transaction ID {txid}")
-                            
-                            # Wait and verify transfer completion
-                            print(f"Waiting for transfer confirmation...")
-                            target_exchange_ops = self.okx_ops if to_exchange == 'okx' else self.binance_ops
-                            
-                            transfer_confirmed = await self._wait_for_deposit(
-                                target_exchange_ops, 
-                                coin, 
-                                quantity, 
-                                txid
-                            )
-                            
-                            if not transfer_confirmed:
-                                print("Transfer not confirmed after maximum attempts. Manual intervention required.")
-                                return False
-                            
-                            # Step 2: Repay margin loan once transfer is confirmed
-                            print(f"Repaying margin loan on {sell_exchange}...")
-                            repay = await repay_loan(symbol, quantity)
-                            print(f"Loan repayment status: {repay}")
-                            
-                            if self._verify_loan_repayment(repay):
-                                # Step 3: Transfer USDT back only after successful loan repayment
-                                print(f"Initiating USDT transfer back to {usdt_return_exchange}...")
-                                usdt_return = await usdt_transfer(
-                                    sell_price * quantity, 
-                                    usdt_return_exchange
-                                )
-                                print(f"USDT transfer status: {usdt_return}")
-                                
-                                self.trading_manager.record_trade(
-                                    symbol, buy_exchange, sell_exchange,
-                                    quantity, buy_price, sell_price,
-                                    total_transfer_fees
-                                )
-                                
-                                await self.trading_manager.complete_trade(symbol)
-                            else:
-                                print("Failed to repay margin loan. Manual intervention required.")
-                                
-                        except Exception as e:
-                            print(f"Error during transfer operations: {e}")
-                            print("Manual intervention may be required to resolve positions.")
+                try:
+                    # Execute both orders concurrently
+                    spot_order, margin_order = await asyncio.gather(
+                        spot_buy(symbol, quantity),
+                        margin_sell(symbol, quantity)
+                    )
                     
+                    if not self._verify_market_orders(spot_order, margin_order):
+                        print(f"Market orders failed verification for {symbol}")
+                        return False
+                        
+                    # Rest of the execution logic...
                     return True
-            
+                    
+                except Exception as e:
+                    print(f"Error executing orders for {symbol}: {e}")
+                    return False
+                    
             return False
                 
         except Exception as e:
-            print(f"Error executing arbitrage for {symbol}: {e}")
+            print(f"Error in execute_arbitrage for {symbol}: {e}")
+            print(f"Full error details: {str(e)}")
             return False
 
     def _verify_market_orders(self, spot_order, margin_order):
@@ -217,41 +184,114 @@ class ArbitrageBot:
             return False
 
     async def fetch_initial_prices(self):
-        # Create a custom SSL context that doesn't verify certificates
-        ssl_context = ssl.create_default_context()
-        ssl_context.check_hostname = False
-        ssl_context.verify_mode = ssl.CERT_NONE
+        """Fetch initial prices from both exchanges"""
+        try:
+            # Create SSL context that skips verification
+            ssl_context = ssl.create_default_context()
+            ssl_context.check_hostname = False
+            ssl_context.verify_mode = ssl.CERT_NONE
+            
+            connector = aiohttp.TCPConnector(ssl=ssl_context)
+            
+            async with aiohttp.ClientSession(connector=connector) as session:
+                # Binance prices
+                binance_url = "https://api.binance.com/api/v3/ticker/price"
+                async with session.get(binance_url) as response:
+                    binance_data = await response.json()
+                    self.binance_prices = {item['symbol']: float(item['price']) for item in binance_data}
 
-        async with aiohttp.ClientSession() as session:
-            # Fetch Binance prices
-            async with session.get(self.BINANCE_API, ssl=ssl_context) as response:
-                binance_data = await response.json()
-                for item in binance_data:
-                    symbol = item['symbol'].replace('USDT', '-USDT')
-                    if symbol in self.SYMBOLS:
-                        self.binance_prices[symbol] = float(item['price'])
+                # OKX prices
+                okx_url = "https://www.okx.com/api/v5/market/tickers?instType=SPOT"
+                async with session.get(okx_url) as response:
+                    okx_data = await response.json()
+                    # Process OKX data
+                    if okx_data.get('code') == '0':  # Check if request was successful
+                        self.okx_prices = {
+                            item['instId'].replace('-', ''): float(item['last'])
+                            for item in okx_data.get('data', [])
+                        }
+                    else:
+                        print(f"Error fetching OKX prices: {okx_data}")
 
-            # Fetch OKX prices
-            params = {'instType': 'SPOT'}
-            async with session.get(self.OKX_API, params=params, ssl=ssl_context) as response:
-                okx_data = await response.json()
-                for item in okx_data['data']:
-                    symbol = item['instId']
-                    if symbol in self.SYMBOLS:
-                        self.okx_prices[symbol] = float(item['last'])
+            print("✅ Initial prices fetched successfully")
+            
+        except Exception as e:
+            print(f"❌ Error fetching initial prices: {str(e)}")
+            raise
+
+    def _validate_symbol(self, symbol):
+        """Validate that a symbol is properly formatted and supported"""
+        try:
+            if not isinstance(symbol, str):
+                return False
+                
+            if len(symbol) < 5:  # Minimum length for any valid symbol
+                return False
+                
+            if not symbol.endswith('USDT'):
+                return False
+                
+            base_currency = symbol[:-4]
+            if base_currency not in COIN_NETWORKS:
+                return False
+                
+            return True
+        except Exception as e:
+            print(f"Error validating symbol {symbol}: {e}")
+            return False
 
     async def check_arbitrage(self, symbol):
         """Check for arbitrage opportunities"""
-        if symbol in self.binance_prices and symbol in self.okx_prices:
-            binance_price = self.binance_prices[symbol]
-            okx_price = self.okx_prices[symbol]
+        try:
+            # Validate symbol first
+            if not self._validate_symbol(symbol):
+                return
+                
+            # Ensure we're using the standard format (without hyphen)
+            standard_symbol = symbol.replace('-', '')
             
-            diff = abs(binance_price - okx_price)
-            avg_price = (binance_price + okx_price) / 2
-            arb_percentage = (diff / avg_price) * 100
+            if standard_symbol in self.binance_prices and standard_symbol in self.okx_prices:
+                binance_price = self.binance_prices[standard_symbol]
+                okx_price = self.okx_prices[standard_symbol]
+                
+                if not (binance_price and okx_price):  # Check for valid prices
+                    return
+                    
+                diff = abs(binance_price - okx_price)
+                avg_price = (binance_price + okx_price) / 2
+                spread_percentage = (diff / avg_price) * 100
 
-            if arb_percentage > self.trading_manager.min_profit_percentage:
-                await self.execute_arbitrage(symbol, binance_price, okx_price)
+                # Calculate basic fees
+                trading_fees = 0.2  # 0.1% per trade
+                coin = standard_symbol[:-4]
+                
+                if coin in COIN_NETWORKS:
+                    withdrawal_fee = COIN_NETWORKS[coin]['withdrawal_fee']
+                    usdt_withdrawal_fee = COIN_NETWORKS['USDT']['withdrawal_fee']
+                    total_transfer_fees = withdrawal_fee + usdt_withdrawal_fee
+                    
+                    # Estimate fee impact based on a standard trade size of 1000 USDT
+                    fee_impact = (total_transfer_fees / 1000) * 100
+                    total_fee_percentage = trading_fees + fee_impact
+                    potential_profit = spread_percentage - total_fee_percentage
+
+                    # Log all spreads above 0.1%
+                    if spread_percentage >= 0.1:
+                        print(f"\nPotential arbitrage for {standard_symbol}:")
+                        print(f"Binance: {binance_price:.8f}")
+                        print(f"OKX: {okx_price:.8f}")
+                        print(f"Spread: {spread_percentage:.3f}%")
+                        print(f"Est. fees: {total_fee_percentage:.3f}%")
+                        print(f"Potential profit: {potential_profit:.3f}%")
+                        
+                        if potential_profit > self.trading_manager.min_profit_percentage:
+                            print("🚀 EXECUTING ARBITRAGE!")
+                            await self.execute_arbitrage(standard_symbol, binance_price, okx_price)
+                        else:
+                            print("❌ Spread too small after fees")
+
+        except Exception as e:
+            print(f"Error checking arbitrage for {symbol}: {e}")
 
     async def run(self):
         """Start the arbitrage bot"""

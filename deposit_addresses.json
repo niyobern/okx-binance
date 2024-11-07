@@ -1,0 +1,1421 @@
+{
+    "timestamp": "2024-11-07T11:35:03.546Z",
+    "addresses": {
+        "CFX": {
+            "binance": {},
+            "okx": {}
+        },
+        "CELO": {
+            "binance": {
+                "CELO": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "CELO",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "FLOW": {
+            "binance": {
+                "FLOW": {
+                    "address": "0xb1e0e1d58c934d50",
+                    "tag": null,
+                    "network": "FLOW",
+                    "error": null
+                }
+            },
+            "okx": {
+                "FLOW": {
+                    "address": "0x970c71e8cac5008e",
+                    "tag": null,
+                    "network": "FLOW",
+                    "error": null
+                }
+            }
+        },
+        "ICP": {
+            "binance": {
+                "ICP": {
+                    "address": "8065a3ea6f375a03655065ea7f7ada2e49be29d30e53022ea387fb7417fb69b3",
+                    "tag": null,
+                    "network": "ICP",
+                    "error": null
+                }
+            },
+            "okx": {
+                "ICP": {
+                    "address": "0770c972b5c02737bd42154af7f99c87afd8934a0ac5453574a4b314088d46da",
+                    "tag": null,
+                    "network": "ICP",
+                    "error": null
+                }
+            }
+        },
+        "ICX": {
+            "binance": {
+                "ICX": {
+                    "address": "hx4ee6e49ecf2d316184ec5c02766f356ad868e484",
+                    "tag": null,
+                    "network": "ICX",
+                    "error": null
+                }
+            },
+            "okx": {
+                "ICX": {
+                    "address": "hx4dd1deab84a110f93045dedfce199e943822a210",
+                    "tag": null,
+                    "network": "ICX",
+                    "error": null
+                }
+            }
+        },
+        "FIL": {
+            "binance": {
+                "FIL": {
+                    "address": "f1v33zo7xvra2n2pn5m33be6hvkas7ofsxj5gywvq",
+                    "tag": null,
+                    "network": "FIL",
+                    "error": null
+                }
+            },
+            "okx": {
+                "FIL": {
+                    "address": "f1mqor6ug7p2q5cvzrpxstuoshlsfqnu7lmymd4la",
+                    "tag": null,
+                    "network": "FIL",
+                    "error": null
+                }
+            }
+        },
+        "XLM": {
+            "binance": {
+                "XLM": {
+                    "address": "GABFQIK63R2NETJM7T673EAMZN4RJLLGP3OFUEJU5SZVTGWUKULZJNL6",
+                    "tag": "357207062",
+                    "network": "XLM",
+                    "error": null
+                }
+            },
+            "okx": {
+                "XLM": {
+                    "address": "GBGII2C7M4TOEC2MVAZYG3TRFM3ATCCEWANSN4Q3AHEX3NRKXJCVZDEV",
+                    "tag": "6078165",
+                    "network": "XLM",
+                    "error": null
+                }
+            }
+        },
+        "ALGO": {
+            "binance": {
+                "ALGO": {
+                    "address": "5BS6F5DLA4AB3W5DMVXMB2PO35Q5ZMN6QCLA5HVYUCI5OZQ5M7CHDJEF7U",
+                    "tag": null,
+                    "network": "ALGO",
+                    "error": null
+                }
+            },
+            "okx": {
+                "ALGO": {
+                    "address": "3GWO3DM7NLR75HUQXJPVNDNPICUCHT4RKHFOJM7KRTS3RGS6MRO7F5DZGQ",
+                    "tag": null,
+                    "network": "ALGO",
+                    "error": null
+                }
+            }
+        },
+        "ENJ": {
+            "binance": {
+                "ENJ": {
+                    "address": "enBvYXXnM6hLH6Ht8GpYEGKUQETHSQhht26xUL5186pLccYKs",
+                    "tag": null,
+                    "network": "ENJ",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "DGB": {
+            "binance": {
+                "DGB": {
+                    "address": "DPQHWAWNQZH1hKR572b36K4Rayi1V62ocC",
+                    "tag": null,
+                    "network": "DGB",
+                    "error": null
+                }
+            },
+            "okx": {
+                "DGB": {
+                    "address": "SgrdEa3PF6pEfLcSVz82zABnQcPonuF3sW",
+                    "tag": null,
+                    "network": "DGB",
+                    "error": null
+                }
+            }
+        },
+        "ONE": {
+            "binance": {
+                "ONE": {
+                    "address": "one1a585yfs2wt0j9wugfm6q8dp7lhplmtnrs9z9d7",
+                    "tag": null,
+                    "network": "ONE",
+                    "error": null
+                }
+            },
+            "okx": {
+                "ONE": {
+                    "address": "one1mg5mk2crfukxct8wx3vu6f07fgr05uczxd28p2",
+                    "tag": null,
+                    "network": "ONE",
+                    "error": null
+                }
+            }
+        },
+        "GLMR": {
+            "binance": {
+                "GLMR": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "GLMR",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "IOST": {
+            "binance": {
+                "IOST": {
+                    "address": "ztsiostd",
+                    "tag": "101432487",
+                    "network": "IOST",
+                    "error": null
+                }
+            },
+            "okx": {
+                "IOST": {
+                    "address": "iost_okex",
+                    "tag": "6026401",
+                    "network": "IOST",
+                    "error": null
+                }
+            }
+        },
+        "RVN": {
+            "binance": {
+                "RVN": {
+                    "address": "RJ8ieorhtYZHaTVNRCJTEXBrRkB2GaZNcm",
+                    "tag": null,
+                    "network": "RVN",
+                    "error": null
+                }
+            },
+            "okx": {
+                "RVN": {
+                    "address": "rQtoe9tjKFHQ4M5bk1SYmAmmoA6cZi8FH2",
+                    "tag": null,
+                    "network": "RVN",
+                    "error": null
+                }
+            }
+        },
+        "ZIL": {
+            "binance": {
+                "ZIL": {
+                    "address": "zil1g0vqu93w08fjlt278rsl73s35qygr6nqx5f9u3",
+                    "tag": null,
+                    "network": "ZIL",
+                    "error": null
+                }
+            },
+            "okx": {
+                "ZIL": {
+                    "address": "zil1e3algw6ukufjyf8pw6xr4wln9hqzj727hpe83g",
+                    "tag": null,
+                    "network": "ZIL",
+                    "error": null
+                }
+            }
+        },
+        "WAXP": {
+            "binance": {
+                "WAX": {
+                    "address": "waxonbinance",
+                    "tag": "106544424",
+                    "network": "WAX",
+                    "error": null
+                }
+            },
+            "okx": {
+                "WAX": {
+                    "address": "okxtothemars",
+                    "tag": "6012581",
+                    "network": "WAX",
+                    "error": null
+                }
+            }
+        },
+        "ACE": {
+            "binance": {
+                "ENDURANCE": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "ENDURANCE",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "LUNA": {
+            "binance": {
+                "LUNA": {
+                    "address": "terra1frh79vmtur5fmrghz6gfjvfhpa3u2c0uemv4af",
+                    "tag": "103214026",
+                    "network": "LUNA",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "EGLD": {
+            "binance": {
+                "EGLD": {
+                    "address": "erd1sgrcn0eempht6pae0n3nhvpupqtz5dkmmfyd2tq7vyazx8f6seyqp2vfe7",
+                    "tag": null,
+                    "network": "EGLD",
+                    "error": null
+                }
+            },
+            "okx": {
+                "EGLD": {
+                    "address": "erd1c4jg66t8c77fxcxl5tuevcm7wn4xkx2mm9yczq0642h4hcz58x7sjz7eyt",
+                    "tag": null,
+                    "network": "EGLD",
+                    "error": null
+                }
+            }
+        },
+        "GAS": {
+            "binance": {
+                "NEO": {
+                    "address": "AeKcLXe19e5jEZF9ALxZA8fcvtC7HWmnPM",
+                    "tag": null,
+                    "network": "NEO",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "HBAR": {
+            "binance": {
+                "HBAR": {
+                    "address": "0.0.1873771",
+                    "tag": "102179396",
+                    "network": "HBAR",
+                    "error": null
+                }
+            },
+            "okx": {
+                "HBAR": {
+                    "address": "0.0.15852",
+                    "tag": "6025480",
+                    "network": "HBAR",
+                    "error": null
+                }
+            }
+        },
+        "EOS": {
+            "binance": {
+                "EOS": {
+                    "address": "eosbndeposit",
+                    "tag": "102767631",
+                    "network": "EOS",
+                    "error": null
+                }
+            },
+            "okx": {
+                "EOS": {
+                    "address": "okbtothemoon",
+                    "tag": "6054537",
+                    "network": "EOS",
+                    "error": null
+                }
+            }
+        },
+        "DYDX": {
+            "binance": {
+                "DYDX": {
+                    "address": "dydx1vvl7htcnzc3g0hsrysxf3vvrk6tpx70822ef6g",
+                    "tag": "100369916",
+                    "network": "DYDX",
+                    "error": null
+                }
+            },
+            "okx": {
+                "DYDX": {
+                    "address": "dydx1zvh689lpnhhvqwz9h797h9tpsfdvxchljdf0lh",
+                    "tag": null,
+                    "network": "DYDX",
+                    "error": null
+                }
+            }
+        },
+        "MOVR": {
+            "binance": {
+                "MOVR": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "MOVR",
+                    "error": null
+                }
+            },
+            "okx": {
+                "MOVR": {
+                    "address": "0x113843fa148970113d62e6707d357993d0cd1a12",
+                    "tag": null,
+                    "network": "MOVR",
+                    "error": null
+                }
+            }
+        },
+        "POL": {
+            "binance": {
+                "MATIC": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "MATIC",
+                    "error": null
+                }
+            },
+            "okx": {
+                "MATIC": {
+                    "address": "0x113843fa148970113d62e6707d357993d0cd1a12",
+                    "tag": null,
+                    "network": "MATIC",
+                    "error": null
+                }
+            }
+        },
+        "WLD": {
+            "binance": {
+                "OPTIMISM": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "OPTIMISM",
+                    "error": null
+                }
+            },
+            "okx": {
+                "OPTIMISM": {
+                    "address": "0x113843fa148970113d62e6707d357993d0cd1a12",
+                    "tag": null,
+                    "network": "OPTIMISM",
+                    "error": null
+                }
+            }
+        },
+        "APT": {
+            "binance": {
+                "APT": {
+                    "address": "0xf8ee44200ab14179c66e95a0a29a8062c38db167aa897d54ee5d272e1598663f",
+                    "tag": null,
+                    "network": "APT",
+                    "error": null
+                }
+            },
+            "okx": {
+                "APT": {
+                    "address": "0x56f4dc977ef797db3ab9bc98586bef0bb21c176726c37f48633b61c6b53a9a56",
+                    "tag": null,
+                    "network": "APT",
+                    "error": null
+                }
+            }
+        },
+        "IOTA": {
+            "binance": {
+                "IOTA": {
+                    "address": "iota1qph9l4whzlrnwrhu7vfsm0vt43mz2z9kqdhdcusyg7853hy46avevj00h0z",
+                    "tag": null,
+                    "network": "IOTA",
+                    "error": null
+                }
+            },
+            "okx": {
+                "IOTA": {
+                    "address": "iota1qphq3z4pzzmmlwhvq45k8n2ktg0jl3hlpcuvcwhhp2n4ph0kflgaq7z70cw",
+                    "tag": null,
+                    "network": "IOTA",
+                    "error": null
+                }
+            }
+        },
+        "DOGS": {
+            "binance": {
+                "TON": {
+                    "address": "EQD5mxRgCuRNLxKxeOjG6r14iSroLF5FtomPnet-sgP5xNJb",
+                    "tag": "125596242",
+                    "network": "TON",
+                    "error": null
+                }
+            },
+            "okx": {
+                "TON": {
+                    "address": "EQD5vcDeRhwaLgAvralVC7sJXI-fc2aNcMUXqcx-BQ-OWnOZ",
+                    "tag": "11832143",
+                    "network": "TON",
+                    "error": null
+                }
+            }
+        },
+        "XTZ": {
+            "binance": {
+                "XTZ": {
+                    "address": "tz2SMwYqcCTcB7Tcjq4bsRbWg9qi1hF1RnWJ",
+                    "tag": null,
+                    "network": "XTZ",
+                    "error": null
+                }
+            },
+            "okx": {
+                "XTZ": {
+                    "address": "tz1WzNeatuuygq7ndMCAc9FH8uAMF4LCR5mr",
+                    "tag": null,
+                    "network": "XTZ",
+                    "error": null
+                }
+            }
+        },
+        "ZK": {
+            "binance": {
+                "ZKSYNCERA": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "ZKSYNCERA",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "NEAR": {
+            "binance": {
+                "NEAR": {
+                    "address": "7cc288431e579d110bebf1192d7143995f0f998fbcc8b5358cc8345c261b9d2f",
+                    "tag": null,
+                    "network": "NEAR",
+                    "error": null
+                }
+            },
+            "okx": {
+                "NEAR": {
+                    "address": "699135f13f09b26d26db9299a4220ab2b41fa9f259ed3e538d839d46106e9eb0",
+                    "tag": null,
+                    "network": "NEAR",
+                    "error": null
+                }
+            }
+        },
+        "LTC": {
+            "binance": {
+                "LTC": {
+                    "address": "LhqbVnYYPhiPkVt9UDzwsamp8wRxBPnoHq",
+                    "tag": null,
+                    "network": "LTC",
+                    "error": null
+                }
+            },
+            "okx": {
+                "LTC": {
+                    "address": "MV2cTU5Qe9MKXKeHvkZvPPUG1f74YwqFz3",
+                    "tag": null,
+                    "network": "LTC",
+                    "error": null
+                }
+            }
+        },
+        "ATOM": {
+            "binance": {
+                "ATOM": {
+                    "address": "cosmos1j8pp7zvcu9z8vd882m284j29fn2dszh05cqvf9",
+                    "tag": "104855394",
+                    "network": "ATOM",
+                    "error": null
+                }
+            },
+            "okx": {
+                "ATOM": {
+                    "address": "cosmos1sn9ucmzxrxa2rxf9xjnvpzucune6lgq8n6ktwn",
+                    "tag": null,
+                    "network": "ATOM",
+                    "error": null
+                }
+            }
+        },
+        "LUNC": {
+            "binance": {
+                "LUNC": {
+                    "address": "terra1frh79vmtur5fmrghz6gfjvfhpa3u2c0uemv4af",
+                    "tag": "103214026",
+                    "network": "LUNC",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "RDNT": {
+            "binance": {
+                "ARBITRUM": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "ARBITRUM",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "ARB": {
+            "binance": {
+                "ARBITRUM": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "ARBITRUM",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "MAGIC": {
+            "binance": {
+                "ARBITRUM": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "ARBITRUM",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "NEO": {
+            "binance": {
+                "NEO3": {
+                    "address": "NTg3HQHKFmKdpfPYM7WELo38ZZiSYJqJ1u",
+                    "tag": null,
+                    "network": "NEO3",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "USDC": {
+            "binance": {
+                "ARBITRUM": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "ARBITRUM",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "TON": {
+            "binance": {
+                "TON": {
+                    "address": "EQD5mxRgCuRNLxKxeOjG6r14iSroLF5FtomPnet-sgP5xNJb",
+                    "tag": "125596242",
+                    "network": "TON",
+                    "error": null
+                }
+            },
+            "okx": {
+                "TON": {
+                    "address": "EQD5vcDeRhwaLgAvralVC7sJXI-fc2aNcMUXqcx-BQ-OWnOZ",
+                    "tag": "11832143",
+                    "network": "TON",
+                    "error": null
+                }
+            }
+        },
+        "XRP": {
+            "binance": {
+                "XRP": {
+                    "address": "rNxp4h8apvRis6mJf9Sh8C6iRxfrDWN7AV",
+                    "tag": "410260796",
+                    "network": "XRP",
+                    "error": null
+                }
+            },
+            "okx": {
+                "XRP": {
+                    "address": "rUzWJkXyEtT8ekSSxkBYPqCvHpngcy6Fks",
+                    "tag": "6264780",
+                    "network": "XRP",
+                    "error": null
+                }
+            }
+        },
+        "ETH": {
+            "binance": {
+                "ARBITRUM": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "ARBITRUM",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "QTUM": {
+            "binance": {
+                "QTUM": {
+                    "address": "Qcoaxppgq1qkj2TmHjwiiSJF1Go1uosFeb",
+                    "tag": null,
+                    "network": "QTUM",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "SUI": {
+            "binance": {
+                "SUI": {
+                    "address": "0xeb0bb646e3427cdadb8ea8715a2c67154c136b5edcda2781b61b082374900a14",
+                    "tag": null,
+                    "network": "SUI",
+                    "error": null
+                }
+            },
+            "okx": {
+                "SUI": {
+                    "address": "0x5e51ebd8e77a0432211b3ea4ac10ed82b9d72769972f7f792476e872962ff7dd",
+                    "tag": null,
+                    "network": "SUI",
+                    "error": null
+                }
+            }
+        },
+        "GMT": {
+            "binance": {
+                "MATIC": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "MATIC",
+                    "error": null
+                }
+            },
+            "okx": {
+                "MATIC": {
+                    "address": "0x113843fa148970113d62e6707d357993d0cd1a12",
+                    "tag": null,
+                    "network": "MATIC",
+                    "error": null
+                }
+            }
+        },
+        "CATI": {
+            "binance": {
+                "TON": {
+                    "address": "EQD5mxRgCuRNLxKxeOjG6r14iSroLF5FtomPnet-sgP5xNJb",
+                    "tag": "125596242",
+                    "network": "TON",
+                    "error": null
+                }
+            },
+            "okx": {
+                "TON": {
+                    "address": "EQD5vcDeRhwaLgAvralVC7sJXI-fc2aNcMUXqcx-BQ-OWnOZ",
+                    "tag": "11832143",
+                    "network": "TON",
+                    "error": null
+                }
+            }
+        },
+        "OP": {
+            "binance": {
+                "OPTIMISM": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "OPTIMISM",
+                    "error": null
+                }
+            },
+            "okx": {
+                "OPTIMISM": {
+                    "address": "0x113843fa148970113d62e6707d357993d0cd1a12",
+                    "tag": null,
+                    "network": "OPTIMISM",
+                    "error": null
+                }
+            }
+        },
+        "ETC": {
+            "binance": {
+                "ETC": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "ETC",
+                    "error": null
+                }
+            },
+            "okx": {
+                "ETC": {
+                    "address": "0x113843fa148970113d62e6707d357993d0cd1a12",
+                    "tag": null,
+                    "network": "ETC",
+                    "error": null
+                }
+            }
+        },
+        "AR": {
+            "binance": {
+                "AR": {
+                    "address": "rswOLM9U2nVhL2E4oSlkujRfKkBGw1zjLJwnwEyfAtU",
+                    "tag": null,
+                    "network": "AR",
+                    "error": null
+                }
+            },
+            "okx": {
+                "AR": {
+                    "address": "aCEjXu90v_cjzq_uHDt46RuBMLicwSo0sC_LODPPra0",
+                    "tag": null,
+                    "network": "AR",
+                    "error": null
+                }
+            }
+        },
+        "HMSTR": {
+            "binance": {
+                "TON": {
+                    "address": "EQD5mxRgCuRNLxKxeOjG6r14iSroLF5FtomPnet-sgP5xNJb",
+                    "tag": "125596242",
+                    "network": "TON",
+                    "error": null
+                }
+            },
+            "okx": {
+                "TON": {
+                    "address": "EQD5vcDeRhwaLgAvralVC7sJXI-fc2aNcMUXqcx-BQ-OWnOZ",
+                    "tag": "11832143",
+                    "network": "TON",
+                    "error": null
+                }
+            }
+        },
+        "FLM": {
+            "binance": {
+                "NEO3": {
+                    "address": "NTg3HQHKFmKdpfPYM7WELo38ZZiSYJqJ1u",
+                    "tag": null,
+                    "network": "NEO3",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "AVAX": {
+            "binance": {
+                "AVAXC": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "AVAXC",
+                    "error": null
+                }
+            },
+            "okx": {
+                "AVAXC": {
+                    "address": "0x113843fa148970113d62e6707d357993d0cd1a12",
+                    "tag": null,
+                    "network": "AVAXC",
+                    "error": null
+                }
+            }
+        },
+        "THETA": {
+            "binance": {
+                "THETA": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "THETA",
+                    "error": null
+                }
+            },
+            "okx": {
+                "THETA": {
+                    "address": "0x113843fa148970113d62e6707d357993d0cd1a12",
+                    "tag": null,
+                    "network": "THETA",
+                    "error": null
+                }
+            }
+        },
+        "TRX": {
+            "binance": {
+                "TRC20": {
+                    "address": "TNZvscDHHbnvQoTYZ63nmejPVU9gX2fmFK",
+                    "tag": null,
+                    "network": "TRC20",
+                    "error": null
+                }
+            },
+            "okx": {
+                "TRC20": {
+                    "address": "TF95b2JKxAWkpfwZNqTHafT1xBaGumFbQ5",
+                    "tag": null,
+                    "network": "TRC20",
+                    "error": null
+                }
+            }
+        },
+        "ONT": {
+            "binance": {
+                "ONT": {
+                    "address": "AeKcLXe19e5jEZF9ALxZA8fcvtC7HWmnPM",
+                    "tag": null,
+                    "network": "ONT",
+                    "error": null
+                }
+            },
+            "okx": {
+                "ONT": {
+                    "address": "AbxHRhv9zFqQuaKZv7R8o9JaEpSSHqrhGB",
+                    "tag": null,
+                    "network": "ONT",
+                    "error": null
+                }
+            }
+        },
+        "KSM": {
+            "binance": {
+                "KSM": {
+                    "address": "F4BTpznqbkNpNVGzHebKm6sP1LibGTyg4X3CUUg5UnYeaQg",
+                    "tag": null,
+                    "network": "KSM",
+                    "error": null
+                }
+            },
+            "okx": {
+                "KSM": {
+                    "address": "EBQVyFECwnyGEnDNbQzY1pRMnQpiFY9mqVxpbTqJLoze9XB",
+                    "tag": null,
+                    "network": "KSM",
+                    "error": null
+                }
+            }
+        },
+        "INJ": {
+            "binance": {
+                "INJ": {
+                    "address": "inj1u2rajhqtptzvu23leheta9yg99k3hazf4waf43",
+                    "tag": "104343602",
+                    "network": "INJ",
+                    "error": null
+                }
+            },
+            "okx": {
+                "INJ": {
+                    "address": "inj19xta3cf2hlwrxkjtj4kyng32akgtjjcpwzrqld",
+                    "tag": null,
+                    "network": "INJ",
+                    "error": null
+                }
+            }
+        },
+        "NOT": {
+            "binance": {
+                "TON": {
+                    "address": "EQD5mxRgCuRNLxKxeOjG6r14iSroLF5FtomPnet-sgP5xNJb",
+                    "tag": "125596242",
+                    "network": "TON",
+                    "error": null
+                }
+            },
+            "okx": {
+                "TON": {
+                    "address": "EQD5vcDeRhwaLgAvralVC7sJXI-fc2aNcMUXqcx-BQ-OWnOZ",
+                    "tag": "11832143",
+                    "network": "TON",
+                    "error": null
+                }
+            }
+        },
+        "USTC": {
+            "binance": {
+                "LUNC": {
+                    "address": "terra1frh79vmtur5fmrghz6gfjvfhpa3u2c0uemv4af",
+                    "tag": "103214026",
+                    "network": "LUNC",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "GMX": {
+            "binance": {
+                "ARBITRUM": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "ARBITRUM",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "BCH": {
+            "binance": {
+                "BCH": {
+                    "address": "13pYHNZhf18p8bBor2QjA1SsvmvDpwBQFL",
+                    "tag": null,
+                    "network": "BCH",
+                    "error": null
+                }
+            },
+            "okx": {
+                "BCH": {
+                    "address": "34TJEHefrxuemYSHEonMekM9ucWrWow2ka",
+                    "tag": null,
+                    "network": "BCH",
+                    "error": null
+                }
+            }
+        },
+        "ADA": {
+            "binance": {
+                "ADA": {
+                    "address": "addr1v9yyppw57ga75wdhj0m656xv6xuwg4pu5l56gxmxdq9enasgp6ngc",
+                    "tag": null,
+                    "network": "ADA",
+                    "error": null
+                }
+            },
+            "okx": {
+                "ADA": {
+                    "address": "Ae2tdPwUPEZ3W1iohxW9esswNaMJmJ8sLg18TmrnKWLVeDpyraoAoZD5vxd",
+                    "tag": null,
+                    "network": "ADA",
+                    "error": null
+                }
+            }
+        },
+        "FTM": {
+            "binance": {
+                "FTM": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "FTM",
+                    "error": null
+                }
+            },
+            "okx": {
+                "FTM": {
+                    "address": "0x113843fa148970113d62e6707d357993d0cd1a12",
+                    "tag": null,
+                    "network": "FTM",
+                    "error": null
+                }
+            }
+        },
+        "DOT": {
+            "binance": {
+                "DOT": {
+                    "address": "16d1A7pjhxXCYyKV2i7oPGYr5uHVpUsk8dwsV8Vgm47B4Zay",
+                    "tag": null,
+                    "network": "DOT",
+                    "error": null
+                }
+            },
+            "okx": {
+                "DOT": {
+                    "address": "14nVwerJ3b53BDWN4DCzaiJFdhDbdNgGF81aJoT23oz1gjdm",
+                    "tag": null,
+                    "network": "DOT",
+                    "error": null
+                }
+            }
+        },
+        "ZRO": {
+            "binance": {
+                "ARBITRUM": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "ARBITRUM",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "ELF": {
+            "binance": {
+                "ELF": {
+                    "address": "2TnhXFGjb7Mwbw2KLxVS8bMHqNJDdDPrkqPEDGkRPNTvgUum5a",
+                    "tag": null,
+                    "network": "ELF",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "METIS": {
+            "binance": {
+                "METIS": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "METIS",
+                    "error": null
+                }
+            },
+            "okx": {
+                "METIS": {
+                    "address": "0x113843fa148970113d62e6707d357993d0cd1a12",
+                    "tag": null,
+                    "network": "METIS",
+                    "error": null
+                }
+            }
+        },
+        "MINA": {
+            "binance": {
+                "MINA": {
+                    "address": "B62qpB1nmunZkaYmBabUMny45gzntJ4VLwdXak5kYegj32LNKkirNJ3",
+                    "tag": null,
+                    "network": "MINA",
+                    "error": null
+                }
+            },
+            "okx": {
+                "MINA": {
+                    "address": "B62qpxDiKDmtk2DXw2puMkJuWRDD28SXF9Af5kFcLc1jMvxZq8MXac6",
+                    "tag": null,
+                    "network": "MINA",
+                    "error": null
+                }
+            }
+        },
+        "TIA": {
+            "binance": {
+                "TIA": {
+                    "address": "celestia1fd3mclxp4e2fh0wpau3eg55x2fsm7yjxzg29j2",
+                    "tag": "104486082",
+                    "network": "TIA",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "GFT": {
+            "binance": {
+                "BEP20": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "BEP20",
+                    "error": null
+                }
+            },
+            "okx": {
+                "BEP20": {
+                    "address": "0x113843fa148970113d62e6707d357993d0cd1a12",
+                    "tag": null,
+                    "network": "BEP20",
+                    "error": null
+                }
+            }
+        },
+        "JOE": {
+            "binance": {
+                "AVAXC": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "AVAXC",
+                    "error": null
+                }
+            },
+            "okx": {
+                "AVAXC": {
+                    "address": "0x113843fa148970113d62e6707d357993d0cd1a12",
+                    "tag": null,
+                    "network": "AVAXC",
+                    "error": null
+                }
+            }
+        },
+        "DOGE": {
+            "binance": {
+                "DOGE": {
+                    "address": "DPnDoWX8zftWy4vkCZzus4qxYY2tv2ZBAn",
+                    "tag": null,
+                    "network": "DOGE",
+                    "error": null
+                }
+            },
+            "okx": {
+                "DOGE": {
+                    "address": "A23TuWjbV5CEYBbiGUhMCEQf9bpiXHepUr",
+                    "tag": null,
+                    "network": "DOGE",
+                    "error": null
+                }
+            }
+        },
+        "STRK": {
+            "binance": {
+                "STARKNET": {
+                    "address": "0x04581df395649285e9fc683982b2bb566c571a29ba1de9b6b2d858c8a52eb0d8",
+                    "tag": null,
+                    "network": "STARKNET",
+                    "error": null
+                }
+            },
+            "okx": {}
+        },
+        "RENDER": {
+            "binance": {
+                "SOL": {
+                    "address": "7cip5GLTP3dSWwDtyu3YyaSZNzRohJgCnX5KzfS3EYWC",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            },
+            "okx": {
+                "SOL": {
+                    "address": "F1ybptKnyDHtQff4Cw7TKxk5pUVrFgANX7pdH8UgLtuk",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            }
+        },
+        "BNB": {
+            "binance": {
+                "BEP20": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "BEP20",
+                    "error": null
+                }
+            },
+            "okx": {
+                "BEP20": {
+                    "address": "0x113843fa148970113d62e6707d357993d0cd1a12",
+                    "tag": null,
+                    "network": "BEP20",
+                    "error": null
+                }
+            }
+        },
+        "FLOKI": {
+            "binance": {
+                "BEP20": {
+                    "address": "0x225328914aaec6fc93982a074e62cb16dbdb3dd8",
+                    "tag": null,
+                    "network": "BEP20",
+                    "error": null
+                }
+            },
+            "okx": {
+                "BEP20": {
+                    "address": "0x113843fa148970113d62e6707d357993d0cd1a12",
+                    "tag": null,
+                    "network": "BEP20",
+                    "error": null
+                }
+            }
+        },
+        "JST": {
+            "binance": {
+                "TRC20": {
+                    "address": "TNZvscDHHbnvQoTYZ63nmejPVU9gX2fmFK",
+                    "tag": null,
+                    "network": "TRC20",
+                    "error": null
+                }
+            },
+            "okx": {
+                "TRC20": {
+                    "address": "TF95b2JKxAWkpfwZNqTHafT1xBaGumFbQ5",
+                    "tag": null,
+                    "network": "TRC20",
+                    "error": null
+                }
+            }
+        },
+        "TNSR": {
+            "binance": {
+                "SOL": {
+                    "address": "7cip5GLTP3dSWwDtyu3YyaSZNzRohJgCnX5KzfS3EYWC",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            },
+            "okx": {
+                "SOL": {
+                    "address": "F1ybptKnyDHtQff4Cw7TKxk5pUVrFgANX7pdH8UgLtuk",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            }
+        },
+        "W": {
+            "binance": {
+                "SOL": {
+                    "address": "7cip5GLTP3dSWwDtyu3YyaSZNzRohJgCnX5KzfS3EYWC",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            },
+            "okx": {
+                "SOL": {
+                    "address": "F1ybptKnyDHtQff4Cw7TKxk5pUVrFgANX7pdH8UgLtuk",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            }
+        },
+        "JTO": {
+            "binance": {
+                "SOL": {
+                    "address": "7cip5GLTP3dSWwDtyu3YyaSZNzRohJgCnX5KzfS3EYWC",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            },
+            "okx": {
+                "SOL": {
+                    "address": "F1ybptKnyDHtQff4Cw7TKxk5pUVrFgANX7pdH8UgLtuk",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            }
+        },
+        "BONK": {
+            "binance": {
+                "SOL": {
+                    "address": "7cip5GLTP3dSWwDtyu3YyaSZNzRohJgCnX5KzfS3EYWC",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            },
+            "okx": {
+                "SOL": {
+                    "address": "F1ybptKnyDHtQff4Cw7TKxk5pUVrFgANX7pdH8UgLtuk",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            }
+        },
+        "PYTH": {
+            "binance": {
+                "SOL": {
+                    "address": "7cip5GLTP3dSWwDtyu3YyaSZNzRohJgCnX5KzfS3EYWC",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            },
+            "okx": {
+                "SOL": {
+                    "address": "F1ybptKnyDHtQff4Cw7TKxk5pUVrFgANX7pdH8UgLtuk",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            }
+        },
+        "WIF": {
+            "binance": {
+                "SOL": {
+                    "address": "7cip5GLTP3dSWwDtyu3YyaSZNzRohJgCnX5KzfS3EYWC",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            },
+            "okx": {
+                "SOL": {
+                    "address": "F1ybptKnyDHtQff4Cw7TKxk5pUVrFgANX7pdH8UgLtuk",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            }
+        },
+        "JUP": {
+            "binance": {
+                "SOL": {
+                    "address": "7cip5GLTP3dSWwDtyu3YyaSZNzRohJgCnX5KzfS3EYWC",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            },
+            "okx": {
+                "SOL": {
+                    "address": "F1ybptKnyDHtQff4Cw7TKxk5pUVrFgANX7pdH8UgLtuk",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            }
+        },
+        "SOL": {
+            "binance": {
+                "SOL": {
+                    "address": "7cip5GLTP3dSWwDtyu3YyaSZNzRohJgCnX5KzfS3EYWC",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            },
+            "okx": {
+                "SOL": {
+                    "address": "F1ybptKnyDHtQff4Cw7TKxk5pUVrFgANX7pdH8UgLtuk",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            }
+        },
+        "RAY": {
+            "binance": {
+                "SOL": {
+                    "address": "7cip5GLTP3dSWwDtyu3YyaSZNzRohJgCnX5KzfS3EYWC",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            },
+            "okx": {
+                "SOL": {
+                    "address": "F1ybptKnyDHtQff4Cw7TKxk5pUVrFgANX7pdH8UgLtuk",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            }
+        },
+        "BOME": {
+            "binance": {
+                "SOL": {
+                    "address": "7cip5GLTP3dSWwDtyu3YyaSZNzRohJgCnX5KzfS3EYWC",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            },
+            "okx": {
+                "SOL": {
+                    "address": "F1ybptKnyDHtQff4Cw7TKxk5pUVrFgANX7pdH8UgLtuk",
+                    "tag": null,
+                    "network": "SOL",
+                    "error": null
+                }
+            }
+        }
+    }
+}

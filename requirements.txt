@@ -4,3 +4,4 @@ requests==2.31.0
 python-dotenv==1.0.0
 ccxt==4.2.15
 pandas==2.2.1
+certifi>=2024.2.2
